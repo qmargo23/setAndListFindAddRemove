@@ -3,9 +3,8 @@ package pro.sky.setAndList;
 import java.util.Objects;
 
 public class Employee {
-
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
@@ -35,6 +34,10 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Сотрудник - " + firstName + "(name),  " + lastName + "(LastName).";
+        return "Employee{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
     }
+
 }
